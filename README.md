@@ -1,5 +1,7 @@
 # homework green_taxi_etl pipeline
-Data loader block :
+making 3 blocks data loader,transformer,exporter 
+# Data Loader Block
+```
 import io
 import pandas as pd
 import requests
@@ -18,8 +20,9 @@ def load_data():
         df = pd.read_csv(url, compression="gzip", parse_dates=["lpep_pickup_datetime"])
         dataframes.append(df)
     return pd.concat(dataframes)
-
-treansformer block :
+```
+# Transformer Block
+```
 if 'transformer' not in globals():
     from mage_ai.data_preparation.decorators import transformer
 if 'test' not in globals():
@@ -38,8 +41,9 @@ def check_data(df):
    assert len(df['VendorID'].unique()) > 0, "No valid vendor IDs found!"
    assert df["passenger_count"].min() > 0, "Minimum passenger count must be greater than 0!"
    assert df["trip_distance"].min() > 0, "Minimum trip distance must be greater than 0!"
-
-data exporter block:
+  ```
+# Expoter Block
+  ```
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
 from mage_ai.io.postgres import Postgres
@@ -71,6 +75,9 @@ def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
             index=False,  # Specifies whether to include index in exported table
             if_exists='replace',  # Specify resolution policy if table name already exists
         )
+
+```
+
 
   
 
