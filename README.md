@@ -19,7 +19,7 @@ This project implements a data ETL pipeline using Mage.ai to process green taxi 
 3.  Execute the pipeline using Mage.ai commands. Refer to the Mage.ai documentation for available commands.
 
 ***The pipeline consists of three key blocks:
-Data loader,Transformer,Exporter*** 
+ Data loader, Transformer, Exporter*** 
 
 ***codes here*** [codes](https://github.com/neema233/ETL-pipeline-with-mage/tree/main/codes)
 # 1. Data Loader Block
