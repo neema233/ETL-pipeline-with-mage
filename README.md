@@ -1,17 +1,5 @@
 # Green_Taxi_ETL: Mage.ai Pipeline for Green Taxi Data
 This project implements a data ETL pipeline using Mage.ai to process green taxi trip data for the final quarter of 2020 (October, November, December).
-# Key Features:
-
-- Modular and reusable code blocks with clear functionalities.
-- Leverages decorators for data loading, transformation, and exporting.
-- Employs unit tests to ensure data quality after transformations.
-- Utilizes configuration files for database connection details (separate file).
-# Benefits:
-
-- Streamlines data processing for green taxi trip data, enabling efficient analysis.
-- Provides a clean and maintainable codebase using Mage.ai features.
-- Improves data quality through filtering and assertions.
-- Enables flexible configuration for database connection and table details.
 # Getting Started:
 
 1.  Ensure you have Mage.ai installed and configured. Refer to the official documentation for installation instructions: https://docs.mage.ai/introduction/overview
@@ -42,7 +30,18 @@ This project implements a data ETL pipeline using Mage.ai to process green taxi 
 - Exports the data to a specified schema (```ny_taxi```) and table (```green_cab_data```).
 - Handles existing table scenarios by replacing the data (```if_exists='replace'```). 
 
-  
+# Key Features:
+
+- Modular and reusable code blocks with clear functionalities.
+- Leverages decorators for data loading, transformation, and exporting.
+- Employs unit tests to ensure data quality after transformations.
+- Utilizes configuration files for database connection details (separate file).
+# Benefits:
+
+- Streamlines data processing for green taxi trip data, enabling efficient analysis.
+- Provides a clean and maintainable codebase using Mage.ai features.
+- Improves data quality through filtering and assertions.
+- Enables flexible configuration for database connection and table details.
 
 
 
