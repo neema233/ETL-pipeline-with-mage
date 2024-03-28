@@ -14,10 +14,9 @@ This project implements a data ETL pipeline using Mage.ai to process green taxi 
 - Enables flexible configuration for database connection and table details.
 # Getting Started:
 
-- Ensure you have Mage.ai installed and configured.
-- Refer to the official documentation for installation instructions: https://docs.mage.ai/introduction/overview
-- Create a configuration file (io_config.yaml) containing your specific database connection details (not included in this repository for security reasons).
-- Execute the pipeline using Mage.ai commands. Refer to the Mage.ai documentation for available commands.
+1.  Ensure you have Mage.ai installed and configured. Refer to the official documentation for installation instructions: https://docs.mage.ai/introduction/overview
+2.  Create a configuration file (```io_config.yaml```) containing your specific database connection details (not included in this repository for security reasons).
+3.  Execute the pipeline using Mage.ai commands. Refer to the Mage.ai documentation for available commands.
 
 ***The pipeline consists of three key blocks:
 Data loader,Transformer,Exporter*** 
